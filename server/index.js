@@ -15,8 +15,8 @@ app.use('/auth', authRoutes)
 const PORT = 3001
 mongoose.connect(process.env.MONGO_URL, {
     dbName: 'PlaceHub',
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useNewUrlParser: true,
+    // useUnifiedTopology: true,
 })
 .then(() => {
     app.listen(PORT, () =>
