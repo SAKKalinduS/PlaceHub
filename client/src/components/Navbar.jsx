@@ -43,7 +43,7 @@ const Navbar = () => {
         />
         <IconButton disabled={search === ""}>
           <Search
-            sx={{ color: variables.pinkred }}
+            sx={{ color: variables.blue }}
             onClick={() => {
               navigate(`/properties/search/${search}`);
             }}
@@ -98,7 +98,7 @@ const Navbar = () => {
 
             <Link
               to="/login"
-              onClick={handleLogout} // Log out without Redux
+              onClick={handleLogout} 
             >
               Log Out
             </Link>
